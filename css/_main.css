@@ -1,0 +1,68 @@
+@import url(./header.css);
+
+:root {
+  height: 100%;
+  font-size: 62.5%;
+
+  --main-green: #118a44;
+  --hover-green: #12c05b;
+  --main-orange: rgb(255, 166, 0);
+  --hover-orange: rgb(218, 141, 0);
+
+  --main-font: Helvetica, Arial, sans serif;
+
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*+* {
+  margin-top: 2rem;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+
+  font-size: 1.6rem;
+  font-family: var(--main-font);
+}
+
+.btn:link,
+.btn:visited,
+[type="submit"] {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.btn-main:link,
+.btn-main:visited {
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--main-orange);
+  border: 1px solid var(--main-orange);
+  border-radius: 3px;
+}
+
+.btn-main:hover,
+.btn-main:active {
+  background-color: var(--hover-orange);
+  border-color: var(--hover-orange);
+}
+
+.wrapper {
+  height: 100%;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://pronto-core-cdn.prontomarketing.com/2/wp-content/uploads/sites/3153/2019/06/Bg-Banner-Honest-Eco-Friendly-Happy-Hauler.jpg');
+  background-size: cover;
+  background-position: center;
+}
