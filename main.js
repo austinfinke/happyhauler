@@ -1,28 +1,19 @@
-console.log('boobs > bellybutton');
-$(function() {
+$ready(() => {})
 
 
-  lol();
-  let fuckit = $('.js--1');
-  fuckit.addClass('animated fadeInLeft');
-  setTimeout(() => {
-    fuckit.removeClass('fadeInLeft');
-    fuckit.addClass('animated fadeOutRight');
-  }, 1800);
+function $(el) {
+  return document.querySelector(el);
+}
 
+function $$(el) {
+  return document.querySelectorAll(el);
+}
 
-
-
-})
-
-
-function lol() {
-
-  for(let i = 0; i < 25; i++) {
-    setTimeout(() => {
-      location.reload();
-    },3000);
+function $ready(fn) {
+  const state = document.readyState;
+  if (state === "complete" || state === "interactive") {
+    setTimeout(fn, 1);
+  } else {
+    document.addEventListener("DOMContentLoaded", fn)
   }
-
-
 }

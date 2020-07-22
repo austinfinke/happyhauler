@@ -1,0 +1,65 @@
+header {
+  width: 100%;
+  height: 125px;
+
+  padding: 1rem;
+  padding-top: 0;
+  position: fixed;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+
+  background-color: var(--main-green);
+  clip-path: polygon(0 0, 100% 0, 100% 25%, 50% 100%, 0 25%);
+
+  transition: 0.2s;
+}
+
+header:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+header * {
+  margin-top: 0;
+}
+
+header a {
+  justify-self: center;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+header a:hover {
+  color: var(--hover-green);
+}
+
+header a img {
+  height: auto;
+  width: 110px;
+}
+
+header ul {
+  list-style: none;
+  justify-self: center;
+  align-self: center;
+
+  visibility: hidden;
+}
+
+header:hover ul {
+  visibility: visible;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 1.6rem;
+}
+
+@keyframes headerIntro {
+  0% {
+    visibility: hidden;
+  }
+}
