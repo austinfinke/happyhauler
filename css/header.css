@@ -1,6 +1,5 @@
 header {
   width: 100%;
-  height: 125px;
 
   margin: 0;
   padding: 1rem;
@@ -17,7 +16,8 @@ header {
   transition: 0.2s;
 }
 
-header:hover {
+header:hover,
+header:active {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
 }
 
@@ -35,13 +35,13 @@ header a:visited {
   font-weight: bold;
 }
 
-header a:hover {
+header a:hover,
+header a:active {
   color: var(--hover-orange);
 }
 
 header a img {
-  height: auto;
-  width: 110px;
+  width: 100px;
 }
 
 header ul {
@@ -52,7 +52,8 @@ header ul {
   visibility: hidden;
 }
 
-header:hover ul {
+header:hover ul,
+header:active ul {
   visibility: visible;
 }
 
@@ -64,11 +65,15 @@ header ul li:not(:first-of-type) {
   position: absolute;
   top: 40%;
   left: 50%;
-  width: 100%;
+  max-width: 1140px;
   transform: translate(-50%, -50%);
   text-align: center;
 
   margin: 0;
+}
+
+.main-cta .btn {
+  font-size: 1.8rem;
 }
 
 .main-cta h1 {
@@ -78,9 +83,28 @@ header ul li:not(:first-of-type) {
   text-align: center;
 }
 
-span {
+span:not(:last-of-type) {
   color: var(--hover-green);
   font-size: 1.1em;
+}
+
+span:last-of-type {
+  border-bottom: 2px solid white;
+}
+
+.sidecar {
+  background-color: var(--main-green);
+  position: fixed;
+  padding: 1rem;
+  top: 70vh;
+  left: 96vw;
+  z-index: 5000;
+  transition: 0.3s;
+}
+
+.sidecar:hover,
+.sidecar:active {
+  left: 84vw;
 }
 
 
@@ -89,5 +113,4 @@ span {
     display: inline-block;
     margin-right: 2rem;
   }
-
 }

@@ -1,5 +1,11 @@
-$ready(() => {})
+$ready(() => {
 
+  inView($('.landing-main'));
+})
+
+function inView(el) {
+  console.log(el.getBoundingClientRect())
+}
 
 function $(el) {
   return document.querySelector(el);

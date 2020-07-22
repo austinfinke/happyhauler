@@ -6,11 +6,11 @@
 
   --main-green: #118a44;
   --hover-green: #12c05b;
-  --main-orange: rgb(255, 166, 0);
-  --hover-orange: rgb(218, 141, 0);
+  --main-orange: #ffa600;
+  --hover-orange: #da8e00;
+  --shadow: rgba(0, 0, 0, 0.1);
 
   --main-font: Helvetica, Arial, sans serif;
-
 }
 
 *,
@@ -24,6 +24,14 @@
 
 *+* {
   margin-top: 2rem;
+}
+
+a {
+  text-shadow:
+    1px 1px var(--shadow),
+    1px -1px var(--shadow),
+    -1px 1px var(--shadow),
+    -1px -1px var(--shadow);
 }
 
 body {
@@ -41,6 +49,11 @@ body {
   padding: 1rem 2.5rem;
   text-decoration: none;
   text-transform: uppercase;
+  box-shadow:
+    1px 1px 3px var(--shadow),
+    1px -1px 3px var(--shadow),
+    -1px 1px 3px var(--shadow),
+    -1px -1px 3px var(--shadow);
   transition: 0.2s;
 }
 
@@ -60,9 +73,10 @@ body {
 }
 
 .wrapper {
+  /* parent = body */
   height: 100%;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://pronto-core-cdn.prontomarketing.com/2/wp-content/uploads/sites/3153/2019/06/Bg-Banner-Honest-Eco-Friendly-Happy-Hauler.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../resources/images/Bg-Banner-Honest-Eco-Friendly-Happy-Hauler.jpg');
   background-size: cover;
   background-position: center;
 }
