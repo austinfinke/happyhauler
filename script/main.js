@@ -1,10 +1,13 @@
 $ready(() => {
 
-  inView($('.landing-main'));
 })
 
-function inView(el) {
-  console.log(el.getBoundingClientRect())
+// function inView(el) {
+//   console.log(el.getBoundingClientRect())
+// }
+
+function clickLogo() {
+  $()
 }
 
 function $(el) {

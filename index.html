@@ -4,52 +4,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script src="https://kit.fontawesome.com/57d24fc4af.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/_main.css">
+
   <title>Home | Happy Hauler</title>
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="landing-wrapper">
     <header>
       <ul>
         <li><a href="">home</a></li>
         <li><a href="">about us</a></li>
         <li><a href="">what we haul</a></li>
       </ul>
-      <a href="./index.html">
+      <div class="logo">
         <img src="./resources/images/HH2ANTtrans.png" alt="happy hauler logo">
-      </a>
+        <p>reliable, honest service.</p>
+      </div>
       <ul>
-        <li><a class="btn btn-main" href="">make appoinment</a></li>
+        <li title="schedule pickup"><a class="btn btn-main" href="">schedule pickup</a></li>
         <li><a href="">contact us</a></li>
         <li><a href="">community</a></li>
       </ul>
     </header>
 
-    <section class="main-cta">
-      <h1>honest, <span>eco-friendly</span> junk <span>removal</span> service</h1>
+    <section class="section-main-cta">
+      <h1 class="main-hh">happy hauler</h1>
+      <h2>honest, <span>eco-friendly</span> junk <span>removal</span> service</h2>
       <div>
-        <a class="btn btn-main" href="#">get a free, no-obligation quote</a>
+        <a title="schedule pickup" class="btn btn-main" href="#">get a free, no-obligation quote</a>
       </div>
     </section>
   </div>
 
-  <main>
-    <section class="landing-main">
-      <h1>heading</h1>
+  <div class="doing-more-wrapper">
+    <section class="section-doing-more">
+      <h1>-- doing more --</h1>
+      <ul>
+        <li><i class="far fa-trash fa-3x fa-spin"></i></li>
+        <li><i class="far fa-recycle fa-3x"></i></li>
+        <li><i class="far fa-hand-holding-seedling fa-3x"></i></li>
+      </ul>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quis. Porro eveniet labore commodi ex
         quibusdam in odit! Accusamus distinctio quam totam ab eius dolor a reiciendis tempore cupiditate. Obcaecati!
       </p>
     </section>
-  </main>
+  </div>
 
 
 
-  <!-- floating side buttons -->
+  <!-- floating side buttons, styles in _main -->
   <div class="sidecar">
-    <a href="#" class="btn btn-main">schedule pickup</a>
-    <a href="#" class="btn btn-main">make payment</a>
+    <a title="schedule pickup" href="#" class="btn btn-main"><i class="fas fa-calendar-edit fa-2x"></i></a>
+    <a title="make payment" href="#" class="btn btn-main"><i class="fas fa-money-check-edit-alt fa-2x"></i></a>
   </div>
 
   <script src="./script/main.js"></script>

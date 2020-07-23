@@ -1,0 +1,171 @@
+@import url(./doing-more-wrapper.css);
+
+.landing-wrapper {
+  /* parent = body */
+  height: 95%;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../resources/images/Bg-Banner-Honest-Eco-Friendly-Happy-Hauler.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 5000;
+
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr;
+
+  background-color: var(--main-green);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 50% 100%, 0 25%);
+  clip-path: polygon(0 0, 100% 0, 100% 25%, 50% 100%, 0 25%);
+
+  transition: 0.2s;
+}
+
+header:hover,
+header:active {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+}
+
+header * {
+  margin-top: 0;
+}
+
+
+header a:link,
+header a:visited {
+  justify-self: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+header a:hover,
+header a:active {
+  color: var(--hover-orange);
+}
+
+header img {
+  width: 100px;
+  cursor: pointer;
+}
+
+header ul {
+  justify-self: center;
+  align-self: center;
+
+  visibility: hidden;
+}
+
+header:hover ul,
+header:active ul {
+  visibility: visible;
+}
+
+/* check media query */
+header ul li:not(:first-of-type) {
+  margin-top: 1.2rem;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo p {
+  display: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header:hover .logo p {
+  display: block;
+}
+
+.section-main-cta {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  margin: 0;
+}
+
+.section-main-cta .btn {
+  font-size: 1.8rem;
+}
+
+.section-main-cta .main-hh {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.2ch;
+
+  color: #fff;
+  font-size: 10rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-main-cta h2 {
+  color: #fff;
+  font-size: 3.8rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+span:not(:last-of-type) {
+  color: var(--hover-green);
+  text-transform: uppercase;
+}
+
+span:last-of-type {
+  border-bottom: 4px solid var(--main-green);
+}
+
+.sidecar {
+  background-color: var(--main-green);
+  position: fixed;
+  padding: 1rem;
+  top: 70%;
+  left: 96%;
+  z-index: 5000;
+  border-radius: 3px;
+  transition: 0.3s;
+  color: salmon;
+}
+
+.sidecar:hover,
+.sidecar:active {
+  left: 90%;
+}
+
+.sidecar .fas {
+  text-shadow:
+    1px 1px 8px var(--shadow),
+    1px -1px 8px var(--shadow),
+    -1px 1px 8px var(--shadow),
+    -1px -1px 8px var(--shadow);
+}
+
+.sidecar .btn {
+  box-shadow:
+    1px 1px 8px var(--shadow),
+    1px -1px 8px var(--shadow),
+    -1px 1px 8px var(--shadow),
+    -1px -1px 8px var(--shadow);
+}
+
+@media screen and (min-width: 1140px) {
+  header ul li {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+}

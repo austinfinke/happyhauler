@@ -1,0 +1,9 @@
+.doing-more-wrapper section {
+  display: grid;
+  justify-items: center;
+}
+
+.section-doing-more ul li {
+  display: inline-block;
+  margin-right: 3rem;
+}

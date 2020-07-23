@@ -1,4 +1,4 @@
-@import url(./header.css);
+@import url(./landing-wrapper.css);
 
 :root {
   height: 100%;
@@ -8,16 +8,15 @@
   --hover-green: #12c05b;
   --main-orange: #ffa600;
   --hover-orange: #da8e00;
-  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow: rgba(0, 0, 0, 0.2);
 
-  --main-font: Helvetica, Arial, sans serif;
+  --logo-font: 'Bangers', cursive;
+  --main-font: 'Roboto', sans-serif;
 }
 
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -50,10 +49,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   box-shadow:
-    1px 1px 3px var(--shadow),
-    1px -1px 3px var(--shadow),
-    -1px 1px 3px var(--shadow),
-    -1px -1px 3px var(--shadow);
+    1px 1px 1px var(--shadow),
+    1px -1px 1px var(--shadow),
+    -1px 1px 1px var(--shadow),
+    -1px -1px 1px var(--shadow);
   transition: 0.2s;
 }
 
@@ -72,11 +71,18 @@ body {
   border-color: var(--hover-orange);
 }
 
-.wrapper {
-  /* parent = body */
-  height: 100%;
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../resources/images/Bg-Banner-Honest-Eco-Friendly-Happy-Hauler.jpg');
-  background-size: cover;
-  background-position: center;
+
+section h1 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.1ch;
+  margin: 0;
+
+  font-size: 6rem;
+  color: var(--main-green);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+ul {
+  list-style: none !important;
 }
