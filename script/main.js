@@ -1,13 +1,20 @@
 $ready(() => {
-
+  flashNav();
 })
 
-// function inView(el) {
-//   console.log(el.getBoundingClientRect())
-// }
 
-function clickLogo() {
-  $()
+
+// TODO: sticky nav when xyz in view
+
+// TODO: click logo in header
+
+
+function flashNav() {
+  // header items animated in landing-wrapper.css
+  $('header').classList.add('flash-nav');
+  setTimeout(() => {
+    $('header').classList.remove('flash-nav');
+  }, 1800)
 }
 
 function $(el) {

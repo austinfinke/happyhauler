@@ -8,7 +8,10 @@
   --hover-green: #12c05b;
   --main-orange: #ffa600;
   --hover-orange: #da8e00;
-  --shadow: rgba(0, 0, 0, 0.2);
+
+  --white-shadow: rgba(255, 255, 255, 0.3);
+  --grey-shadow: rgba(0, 0, 0, 0.2);
+  --green-shadow: rgba(18, 192, 91, 0.2);
 
   --logo-font: 'Bangers', cursive;
   --main-font: 'Roboto', sans-serif;
@@ -25,12 +28,11 @@
   margin-top: 2rem;
 }
 
-a {
-  text-shadow:
-    1px 1px var(--shadow),
-    1px -1px var(--shadow),
-    -1px 1px var(--shadow),
-    -1px -1px var(--shadow);
+a,
+.logo p,
+.sidecar .fas {
+  text-shadow: 1px 3px 5px var(--grey-shadow),
+    0px -3px 5px var(--grey-shadow);
 }
 
 body {
@@ -49,10 +51,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   box-shadow:
-    1px 1px 1px var(--shadow),
-    1px -1px 1px var(--shadow),
-    -1px 1px 1px var(--shadow),
-    -1px -1px 1px var(--shadow);
+    0px 2px 6px var(--grey-shadow),
+    0px -2px 6px var(--grey-shadow),
+    2px 0px 6px var(--grey-shadow),
+    -2px 0px 6px var(--grey-shadow);
   transition: 0.2s;
 }
 
@@ -69,6 +71,10 @@ body {
 .btn-main:active {
   background-color: var(--hover-orange);
   border-color: var(--hover-orange);
+}
+
+section {
+  margin-top: 6rem;
 }
 
 
