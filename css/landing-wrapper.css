@@ -1,10 +1,10 @@
-@import url(./doing-more-wrapper.css);
-
 .landing-wrapper {
   /* parent = body */
   height: 95%;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../resources/images/Bg-Banner-Honest-Eco-Friendly-Happy-Hauler.jpg');
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../resources/images/Bg-Banner-Honest-Eco-Friendly-Happy-Hauler.jpg');
   background-size: cover;
   background-position: center;
   transition: 0.2s;
@@ -17,6 +17,7 @@ header {
 
   display: grid;
   justify-items: center;
+  align-items: center;
   grid-template-columns: 1fr 0.5fr 1fr;
   grid-template-rows: 1fr;
 
@@ -61,6 +62,11 @@ header ul {
   justify-self: center;
   align-self: center;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
   visibility: hidden;
 
   animation-name: nav-helper;
@@ -72,11 +78,6 @@ header ul {
 header:hover ul,
 header:active ul {
   visibility: visible;
-}
-
-/* check media query */
-header ul li:not(:first-of-type) {
-  margin-top: 1.2rem;
 }
 
 .logo {
@@ -112,7 +113,7 @@ header:focus .logo p {
 
 .section-main-cta .main-hh {
   color: white;
-  letter-spacing: 0.2ch;
+  letter-spacing: 0.3ch;
   font-size: 10rem;
   text-transform: uppercase;
   text-align: center;
@@ -134,13 +135,13 @@ header:focus .logo p {
     -10px 20px 5px var(--grey-shadow);
 }
 
-span:not(:last-of-type) {
+.section-main-cta span:not(:last-of-type) {
   color: var(--hover-green);
   text-transform: uppercase;
 }
 
-span:last-of-type {
-  border-bottom: 4px solid var(--main-green);
+.section-main-cta span:last-of-type {
+  border-bottom: 4px solid var(--hover-green);
 }
 
 .sidecar {
@@ -169,8 +170,11 @@ span:last-of-type {
 
 
 @media screen and (min-width: 1140px) {
+  header ul {
+    flex-flow: row wrap;
+  }
+
   header ul li {
-    display: inline-block;
     font-size: 1.8rem;
     margin-right: 2rem;
   }

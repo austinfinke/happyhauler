@@ -1,0 +1,74 @@
+footer {
+  background-color: var(--main-green);
+  border-top: 25px solid var(--hover-green);
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 5rem;
+}
+
+footer div {
+  margin-top: 0;
+}
+
+footer p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2ch;
+  color: #fff;
+}
+
+footer a {
+  text-shadow: none;
+}
+
+footer a:link,
+footer a:visited {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+}
+
+footer img {
+  max-width: 200px;
+  height: auto;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer i:hover {
+  transform: scale(1.1);
+}
+
+footer div:last-of-type {
+  align-self: center;
+}
+
+footer div:last-of-type ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+footer div:last-of-type ul li {
+  margin-top: 0;
+  margin-right: 2rem;
+}
+
+footer span {
+  width: 100%;
+  background-color: var(--hover-green);
+  /* grow 0 shrink 0 start 100% */
+  flex: 0 0 100%;
+  text-align: center;
+  margin-top: 10rem;
+  padding: 3rem;
+}
