@@ -1,97 +1,73 @@
-@import url(./landing-wrapper.css);
-@import url(./doing-more-wrapper.css);
-@import url(./footer.css);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
   height: 100%;
   font-size: 62.5%;
-  box-sizing: border-box;
 
-  --main-green: #118a44;
-  --hover-green: #12c05b;
-  --main-orange: #ffa600;
-  --hover-orange: #da8e00;
+  --clr-primary-100: #2BDE61;
+  --clr-primary-200: #1EC24F;
+  --clr-primary-300: #199F41;
+  --clr-primary-400: #137C33;
+  --clr-primary-500: #0E5824;
 
-  --white-shadow: rgba(255, 255, 255, 0.3);
-  --grey-shadow: rgba(0, 0, 0, 0.2);
-  --green-shadow: rgba(18, 192, 91, 0.2);
+  --clr-primary-gradient: linear-gradient(300deg, #0E5824 19.42%, #137C33 50%);
 
-  --logo-font: 'Bangers', cursive;
-  --main-font: 'Roboto', sans-serif;
-}
+  --clr-secondary-300: #ff5e1f;
+  --clr-secondary-500: #F54500;
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  scroll-behavior: smooth;
-}
+  --clr-light: #f5f5f5;
+  --clr-dark: #0b0b09;
 
-*+* {
-  margin-top: 2rem;
-}
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Luckiest Guy', cursive;
 
-a,
-.logo p,
-.sidecar .fas {
-  text-shadow: 1px 3px 5px var(--grey-shadow),
-    0px -3px 5px var(--grey-shadow);
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
 }
 
 body {
   height: 100%;
   margin: 0;
-
   font-size: 1.6rem;
-  font-family: var(--main-font);
+  font-size: clamp(1.6rem, 1.67vw, 2rem);
+  font-family: var(--ff-primary);
+  line-height: 1.5;
+  color: var(--clr-dark);
 }
 
-.btn:link,
-.btn:visited,
-[type="submit"] {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  box-shadow:
-    0px 2px 6px var(--grey-shadow),
-    0px -2px 6px var(--grey-shadow),
-    2px 0px 6px var(--grey-shadow),
-    -2px 0px 6px var(--grey-shadow);
-  transition: 0.2s;
+img {
+  max-width: 100%;
 }
 
-.btn-main:link,
-.btn-main:visited {
-  font-weight: bold;
-  color: #fff;
-  background-color: var(--main-orange);
-  border: 1px solid var(--main-orange);
-  border-radius: 3px;
+h1,
+h2 {
+  margin-top: 0;
+  font-family: var(--ff-secondary);
 }
 
-.btn-main:hover,
-.btn-main:active {
-  background-color: var(--hover-orange);
-  border-color: var(--hover-orange);
-  transform: scale(1.1);
+header {
+  height: 100vh;
+  background: var(--clr-primary-gradient);
+  color: var(--clr-light);
 }
 
-section {
-  margin-top: 6rem;
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
 }
 
-section h1 {
-  font-family: 'Bangers', cursive;
-  letter-spacing: 0.15ch;
-  margin: 0;
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
 
-  font-size: 6rem;
-  color: var(--main-green);
-  text-transform: uppercase;
+.header__text {
   text-align: center;
-}
-
-ul {
-  list-style: none !important;
 }

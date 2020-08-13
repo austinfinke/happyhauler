@@ -1,9 +1,0 @@
-.section-doing-more {
-  display: grid;
-  justify-items: center;
-}
-
-.section-doing-more ul li {
-  display: inline-block;
-  margin-right: 5rem;
-}
