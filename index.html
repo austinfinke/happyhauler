@@ -4,105 +4,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
   <script src="https://kit.fontawesome.com/57d24fc4af.js" crossorigin="anonymous"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/_main.css">
-
+  <link rel="stylesheet" href="./main.css">
   <title>Home | Happy Hauler</title>
 </head>
 
 <body>
-  <div class="landing-wrapper">
-    <header>
-      <ul>
-        <li><a href="">home</a></li>
-        <li><a href="">about us</a></li>
-        <li><a href="">what we haul</a></li>
+  <header class="header">
+    <i class="far fa-chevron-circle-down"></i>
+    <div class="header__text row container">
+      <p>reliable, honest service</p>
+      <h1 class="header__title">happy hauler</h1>
+      <p>eco-friendly junk removal service</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <nav class="nav container row">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">link</a></li>
+        <li class="nav__item"><a href="#">link</a></li>
+        <li class="nav__item"><a href="#">link</a></li>
       </ul>
-      <div class="logo">
-        <img src="./resources/images/HH2ANTtrans.png" alt="happy hauler logo">
-        <p>reliable, honest service.</p>
+      <figure class="nav__img">
+        <img src="#" alt="a pic">
+      </figure>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">link</a></li>
+        <li class="nav__item"><a href="#">link</a></li>
+        <li class="nav__item"><a href="#">link</a></li>
+      </ul>
+    </nav>
+    <div class="main-cta container">
+      <div class="main-cta__text">
+        <h1>happy hauler</h1>
+        <p>experience the difference.</p>
       </div>
-      <ul>
-        <li title="schedule pickup"><a class="btn btn-main" href="">schedule pickup</a></li>
-        <li><a href="">contact us</a></li>
-        <li><a href="">community</a></li>
-      </ul>
-    </header>
-
-    <section class="section-main-cta">
-      <h1 class="main-hh">happy hauler</h1>
-      <h2>honest, <span>eco-friendly</span> junk <span>removal</span> service</h2>
-      <div>
-        <a title="schedule pickup" class="btn btn-main" href="#">get a free, no-obligation quote</a>
+      <div class="main-cta__links">
+        <a href="#">link</a>
+        <a href="#">link</a>
       </div>
-    </section>
-  </div>
-
-
-  <!-- styles in _main -->
-  <div class="main-content-wrapper">
-    <section class="section-doing-more">
-      <h1>-- doing more --</h1>
-      <ul>
-        <li><i class="far fa-trash fa-3x fa-spin"></i></li>
-        <li><i class="far fa-recycle fa-3x"></i></li>
-        <li><i class="far fa-hand-holding-seedling fa-3x"></i></li>
-      </ul>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quis. Porro eveniet labore commodi ex
-        quibusdam in odit! Accusamus distinctio quam totam ab eius dolor a reiciendis tempore cupiditate. Obcaecati!
-      </p>
-    </section>
-  </div>
-
-  <!-- floating side buttons, styles in _main -->
-  <div class="sidecar">
-    <a title="schedule pickup" href="#" class="btn btn-main"><i class="fas fa-calendar-edit fa-2x"></i></a>
-    <a title="make payment" href="#" class="btn btn-main"><i class="fas fa-money-check-edit-alt fa-2x"></i></a>
-  </div>
-
-  <footer>
-    <div>
-      <img src="./resources/images/HH2ANTtrans.png" alt="happy hauler ant logo">
     </div>
-    <div>
-      <p>haul</p>
-      <ul>
-        <li><a href="#">schedule pickup</a></li>
-        <li><a href="#">what we haul</a></li>
-        <li><a href="#">service area map</a></li>
-        <li><a href="#">about us</a></li>
-        <li><a href="#"></a></li>
-      </ul>
-    </div>
+  </main>
 
-    <div>
-      <p>happy hauler</p>
-      <ul>
-        <li><a href="#">sustainability pledge</a></li>
-        <li><a href="#">jobs</a></li>
-        <li><a href="#">contact</a></li>
-        <li><a href="#">privacy policy</a></li>
-      </ul>
+  <section class="section light-bg">
+    <h2 class="section__heading container">sustainability commitment</h2>
+    <div class="container row">
+      <figure class="section__img">
+        <img src="#" alt="a pic">
+      </figure>
+      <div class="section__text">
+        <p class="section__text-title">happy hauler is doing more</p>
+        <p class="section__text-subtitle">committed to the community</p>
+        <div class="section__text-links">
+          <a href="#">link</a>
+          <a href="#">link</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div>
-      <p>connect</p>
-      <ul>
-        <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
-        <li><a href="#"><i class="fab fa-yelp fa-2x"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-      </ul>
+  <section class="section">
+    <h2 class="section__heading container">read our reviews</h2>
+    <div class="container row">
+      <div class="card">
+        <div class="card__heading">
+          <figure>
+            <img src="#" alt="a pic">
+          </figure>
+          <div class="card__heading-text">
+            <p class="name">name</p>
+            <p class="loc">location</p>
+          </div>
+        </div>
+        <div class="card__body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nisi veniam ipsum eius pariatur possimus
+            tenetur facilis incidunt sapiente aut unde quaerat tempora sint praesentium, iste debitis ab consequatur?
+            Ipsa.</p>
+        </div>
+        <div class="rating">
+          <p>stars</p>
+        </div>
+      </div>
     </div>
-    <span>copy</span>
+    <p>happily servicing the seattle area since 1998</p>
+  </section>
+
+  <section class="section light-bg">
+    <h2 class="section__heading container">we probably haul that</h2>
+    <div class="container row">
+      <div class="section__text">
+        <ul>
+          <li>
+            <i class="far fa-check-circle"></i>
+            <p>household items, including large appliances</p>
+          </li>
+          <li>
+            <i class="far fa-check-circle"></i>
+            <p>landscape refuse</p>
+          </li>
+          <li>
+            <i class="far fa-check-circle"></i>
+            <p>commercial scrap and rubbish</p>
+          </li>
+          <li>
+            <i class="far fa-check-circle"></i>
+            <p>industrial equipment and machinery</p>
+          </li>
+          <li>
+            <i class="far fa-check-circle"></i>
+            <p>much more</p>
+          </li>
+        </ul>
+        <a href="#">link</a>
+      </div>
+      <figure class="section__img">
+        <img src="#" alt="a pic">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__heading container">service area coverage</h2>
+    <div class="container row">
+      <figure class="section__img">
+        <img src="#" alt="a pic">
+      </figure>
+      <div class="section__text">
+        <div class="row">
+          <div class="input">
+            <label for="zip-input">zip input</label>
+            <input type="text" name="zip-input" id="zip-input">
+          </div>
+          <div class="input">
+            <label for="city-input">city input</label>
+            <input type="text" name="city-input" id="city-input">
+          </div>
+        </div>
+        <div class="row light-bg">
+          <div class="item">
+            <i class="far fa-calendar-check"></i>
+            <p class="item__heading">heading</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="item">
+            <i class="far fa-paste"></i>
+            <p class="item__heading">heading</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="item">
+            <i class="far fa-trash"></i>
+            <p class="item__heading">heading</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__heading container">reliable, honest service</p>
+    <div class="container row">
+      <figure class="footer__img">
+        <img src="#" alt="a pic">
+      </figure>
+      <div class="footer__menu">
+        <p>services</p>
+        <ul class="footer__menu-list">
+          <li>schedule pickup</li>
+          <li>what we haul</li>
+          <li>service area map</li>
+          <li>about us</li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <p>happy hauler</p>
+        <ul class="footer__menu-list">
+          <li>sustainability pledge</li>
+          <li>careers</li>
+          <li>contact us</li>
+          <li>privacy policy</li>
+        </ul>
+      </div>
+      <div class="footer_social">
+        <p>follow us</p>
+        <ul class="footer__menu-social">
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-instagram-square"></i></li>
+          <li><i class="fab fa-twitter-square"></i></li>
+          <li><i class="fab fa-yelp"></i></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">copyright</p>
   </footer>
-  <script src="./script/main.js"></script>
+
+
+
 </body>
 
 </html>
